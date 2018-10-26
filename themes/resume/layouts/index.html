@@ -1,0 +1,21 @@
+{{ define "main" }}
+   {{ partial "about.html" .}}
+   {{ if .Site.Params.showResearch }}
+      {{ with .Site.GetPage "section" "research" }}
+         {{ .Scratch.Add "sectionId" "research" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
+   {{ end }}
+   {{ if .Site.Params.showProjects }}
+      {{ with .Site.GetPage "section" "projects" }}
+         {{ .Scratch.Add "sectionId" "projects" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
+   {{ end }}
+   {{ if .Site.Params.showExperience }}
+       {{ partial "portfolio/experience.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showEducation }}
+       {{ partial "portfolio/education.html" . }}
+   {{ end }}
+{{ end }}

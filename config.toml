@@ -1,0 +1,29 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "resume"
+title = "Prof. Mukkamala Saratchandra Babu"
+[params]
+address = "Visakhapatnam, Andhra Pradesh, India"
+contactNote = "Professor of Chemistry"
+description = "Professor of Chemistry"
+email = "mscbabu@gmail.com"
+favicon = "images/favicon.ico"
+designation = "Prof."
+firstName = "Saratchandra Babu"
+lastName = "Mukkamala"
+phone = "+91 891 2840468"
+profileImage = "img/msb_sm2.jpg"
+showEducation = true
+showExperience = true
+showProjects = true
+showResearch = true
+showQr = true
+[params.google.analytics]
+trackerID = "UA-50885039-3"
+[[params.handles]]
+link = "https://www.linkedin.com/in/"
+name = "LinkedIn"
+[[params.handles]]
+link = "https://twitter.com/mscbabu"
+name = "Twitter"
+

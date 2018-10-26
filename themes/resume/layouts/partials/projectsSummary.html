@@ -1,0 +1,14 @@
+<div class="resume-item d-flex flex-column flex-md-row mb-5">
+  <div class="resume-content mr-auto">
+    <h3 class="mb-0">{{ .Title }}</h3>
+    <div class="subheading mb-3">Sponsoring Organization: {{ .Params.sponsor }}</div>
+    <div class="subheading mb-3">Grant Sanctioned: <b>{{ .Params.grantAmount }}</b></div>
+    {{ if .Params.collabroator }}
+    <p>Collaborating Organization: {{ .Params.collabroator }}</p>
+    {{ end }}
+    <p>{{ .Params.notes }}</p>
+  </div>
+  <div class="resume-date text-md-right">
+    <span class="text-primary">{{ dateFormat "2006" .Params.from }} - {{ dateFormat "2006" .Params.to }}</span>
+  </div>
+</div>
